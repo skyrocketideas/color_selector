@@ -3,6 +3,7 @@
 window.addEventListener("DOMContentLoaded", init);
 
 // function to get color
+`
 
 // function to convert to HEX
 
