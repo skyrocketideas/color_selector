@@ -8,6 +8,7 @@
   --tertiary-color: grey;
   --primary-font: "Raleway", sans-serif;
   --secondary-font: "Arial", sans-serif;
+  --third-box-color: red;
 }
 
 /* set border box and all styles */
@@ -66,7 +67,7 @@ label {
 }
 
 #thirdBox {
-  background-color: coral;
+  background-color: var(--third-box-color);
 }
 
 #fourthBox {
