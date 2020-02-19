@@ -1,8 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+/* setup variables*/
+:root {
+  --bg-color: green;
+  --primary-color: black;
+  --secondary-color: pink;
+  --tertiary-color: grey;
+  --primary-font: "Raleway", sans-serif;
+  --secondary-font: "Arial", sans-serif;
+}
+
+/* set border box and all styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+.colorPicker {
+  display: flex;
+  justify-content: center;
+}
+
 input {
   width: 100px;
-  padding: 20px;
+  height: 100px;
+  padding: 10px;
 }
 
 label {
   font-size: 20px;
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid black;
+  color: aqua;
+}
+
+#firstBox {
+  background-color: cadetblue;
+}
+
+#secondBox {
+  background-color: blueviolet;
+}
+
+#thirdBox {
+  background-color: coral;
+}
+
+#fourthBox {
+  background-color: darkgreen;
+}
+
+#fifthBox {
+  background-color: darkslateblue;
 }
