@@ -2,13 +2,16 @@
 
 /* setup variables*/
 :root {
-  --bg-color: green;
-  --primary-color: black;
-  --secondary-color: pink;
-  --tertiary-color: grey;
+  --bg-color: #bbbbbb;
+  --primary-color: #504ead;
+  --secondary-color: #ef4ead;
   --primary-font: "Raleway", sans-serif;
   --secondary-font: "Arial", sans-serif;
-  --third-box-color: red;
+  --first-box-color: #ffabd6;
+  --second-box-color: #cc9be8;
+  --third-box-color: #b8b8ff;
+  --fourth-box-color: #9bcae8;
+  --fifth-box-color: #6effdc;
 }
 
 /* set border box and all styles */
@@ -31,6 +34,16 @@ body {
   font-family: var(--primary-font);
 }
 
+/* set h1 style */
+h1 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+h2 {
+  color: var(--secondary-color);
+}
+
 .colorPicker {
   display: flex;
   justify-content: center;
@@ -46,6 +59,7 @@ label {
   font-size: 20px;
 }
 
+/* setup grid on palette section */
 .palette {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -59,11 +73,11 @@ label {
 }
 
 #firstBox {
-  background-color: cadetblue;
+  background-color: var(--first-box-color);
 }
 
 #secondBox {
-  background-color: blueviolet;
+  background-color: var(--second-box-color);
 }
 
 #thirdBox {
@@ -71,9 +85,9 @@ label {
 }
 
 #fourthBox {
-  background-color: darkgreen;
+  background-color: var(--fourth-box-color);
 }
 
 #fifthBox {
-  background-color: darkslateblue;
+  background-color: var(--fifth-box-color);
 }
