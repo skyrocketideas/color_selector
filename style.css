@@ -17,6 +17,7 @@
   padding: 0;
 }
 
+/* setup main grid container */
 .grid_container {
   display: grid;
   grid-template-columns: 1fr;
@@ -24,6 +25,7 @@
   text-align: center;
 }
 
+/* apply body styles */
 body {
   font-family: var(--primary-font);
 }
